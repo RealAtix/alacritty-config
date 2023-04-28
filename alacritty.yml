@@ -1,0 +1,169 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  # Window decorations
+  decorations: full
+
+  # Startup Mode (changes require restart)
+  startup_mode: Windowed
+  padding:
+    x: 0
+    y: 0
+  
+  dynamic_title: true
+  dynamic_padding: true
+
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 100000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  # normal:
+  #   family: InconsolataLGC NFM
+  #   style: Regular
+  # bold:
+  #   family: InconsolataLGC NFM
+  #   style: Bold
+  # italic:
+  #   family: InconsolataLGC NFM
+  #   style: Oblique
+  # bold_italic:
+  #   family: InconsolataLGC NFM
+  #   style: Bold Oblique
+  # size: 10.5
+
+  normal:
+    family: InconsolataGo NFM
+    # style: Regular
+  bold:
+    family: InconsolataGo NFM
+    # style: Bold
+  italic:
+    family: InconsolataGo NFM
+    # style: Oblique
+  bold_italic:
+    family: InconsolataGo NFM
+    # style: Bold Oblique
+  size: 12
+
+  # normal:
+  #   family: InconsolataGo NFM
+  #   style: Regular
+  # bold:
+  #   family: InconsolataGo NFM
+  #   style: Bold
+  # italic:
+  #   family: InconsolataGo NFM
+  #   style: Oblique
+  # bold_italic:
+  #   family: InconsolataGo NFM
+  #   style: Bold Oblique
+  # size: 10.5
+  # use_thin_strokes: true
+# draw_bold_text_with_bright_colors: true
+
+# bell:
+#   animation: EaseOutExpo
+#   duration: 300
+#   color: '0xffffff"
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+cursor:
+  # Cursor style
+  style:
+
+    shape: Block
+
+    # Cursor blinking state
+    #
+    # Values for `blinking`:
+    #   - Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: Off
+
+shell:
+  program: 'C:\Windows\system32\wsl.exe'
+
+# Startup directory
+working_directory: '\\wsl$\Ubuntu\home\raz'
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+# Theme
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '#1a1b26'
+      foreground: '#a9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#787c99'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '#24283b'
+      foreground: '#a9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#9699a8'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+      
+colors: *tokyo-night
