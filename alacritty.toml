@@ -1,0 +1,117 @@
+working_directory = '\\wsl$\Ubuntu\home\raz'
+
+[colors.bright]
+black = "#444b6a"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#acb0d0"
+yellow = "#ff9e64"
+
+[colors.normal]
+black = "#32344a"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#a9b1d6"
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[font]
+size = 12
+
+[font.bold]
+family = "InconsolataGo NFM"
+
+[font.bold_italic]
+family = "InconsolataGo NFM"
+
+[font.italic]
+family = "InconsolataGo NFM"
+
+[font.normal]
+family = "InconsolataGo NFM"
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[schemes.tokyo-night.bright]
+black = "#444b6a"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#acb0d0"
+yellow = "#ff9e64"
+
+[schemes.tokyo-night.normal]
+black = "#32344a"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#787c99"
+yellow = "#e0af68"
+
+[schemes.tokyo-night.primary]
+background = "#1a1b26"
+foreground = "#a9b1d6"
+
+[schemes.tokyo-night-storm.bright]
+black = "#444b6a"
+blue = "#7da6ff"
+cyan = "#0db9d7"
+green = "#b9f27c"
+magenta = "#bb9af7"
+red = "#ff7a93"
+white = "#acb0d0"
+yellow = "#ff9e64"
+
+[schemes.tokyo-night-storm.normal]
+black = "#32344a"
+blue = "#7aa2f7"
+cyan = "#449dab"
+green = "#9ece6a"
+magenta = "#ad8ee6"
+red = "#f7768e"
+white = "#9699a8"
+yellow = "#e0af68"
+
+[schemes.tokyo-night-storm.primary]
+background = "#24283b"
+foreground = "#a9b1d6"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[shell]
+program = 'C:\Windows\system32\wsl.exe'
+
+[window]
+decorations = "full"
+dynamic_padding = true
+dynamic_title = true
+startup_mode = "Windowed"
+
+[window.padding]
+x = 0
+y = 0
